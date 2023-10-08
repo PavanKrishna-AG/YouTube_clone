@@ -1,0 +1,26 @@
+.body{
+margin: 0;
+font-family: arial;
+}
+/* .video-preview{
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    column-gap: 20px;
+} */
+.thumbnail-row{
+    
+}
+/* .video-preview{
+    width: 300px;
+} */
+ .container{
+    background-color: lightblue;
+    /* display: grid;
+    grid-template-columns: 300px ; */
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+}
+
