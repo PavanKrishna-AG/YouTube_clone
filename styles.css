@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap");
 body {
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0;
 }
 p {
 	font-family: roboto, arial;
@@ -10,8 +9,29 @@ p {
 }
 
 .header {
-	margin-bottom: 100px;
-	background-color: lightblue;
+	display:flex;
+	flex-direction: row;
+	height: 55px;
+	justify-content: space-between;
+}
+.left-sec{
+width: 150px;
+background-color: lightblue;
+
+}
+.mid-sec{
+	
+	flex: 1;
+	margin-left: 70px;
+	margin-right: 35px;
+	max-width: 500px;
+	background-color: lightcoral;
+}
+.right-sec{
+	
+	width: 200px;
+	background-color: rgb(223, 202, 5);
+
 }
 .thumbnail-img {
 	width: 100%;
