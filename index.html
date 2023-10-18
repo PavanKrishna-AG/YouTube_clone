@@ -3,183 +3,1294 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css" />
+
+		<link rel="stylesheet" href="styles/general.css" />
+		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/sidebar.css" />
+		<link rel="stylesheet" href="styles/video.css" />
+		<link
+			type="image/png"
+			sizes="120x120"
+			rel="icon"
+			href="icons/icons8-youtube-120.png"
+		/>
 		<title>YouTube</title>
 	</head>
 	<body>
-		<div class="header">
+		<header class="header">
 			<div class="left-sec">
-				<img class="hamburger" src="icons/hamburger-menu.svg" alt="image">
-				<img class="logo" src="icons/youtube-logo.svg" alt="img">
+				<img
+					class="hamburger"
+					src="icons/hamburger-menu.svg"
+					alt="image"
+				/>
+				<img class="logo" src="icons/youtube-logo.svg" alt="img" />
 			</div>
 			<div class="mid-sec">
-				<input class="search-bar" type="text" placeholder="Search" />
-				<button class="search-button"><img class="imgs" src="icons/search.svg" alt=""></button>
-				<button class="v-search-button"><img class="imgv" src="icons/voice-search-icon.svg" alt=""></button>
+				<input
+					class="search-bar-input"
+					type="text"
+					placeholder="Search"
+				/>
+				<button class="search-button">
+					<img class="search-icon" src="icons/search.svg" alt="" />
+					<div class="tooltip">Search</div>
+				</button>
+				<button class="voice-search-button">
+					<img
+						class="voice-search-icon"
+						src="icons/voice-search-icon.svg"
+						alt=""
+					/>
+					<div class="tooltip">Search with your voice</div>
+				</button>
 			</div>
 			<div class="right-sec">
-				<img class="upload" src="icons/upload.svg" alt="">
-				<img class="apps" src="icons/youtube-apps.svg" alt="">
-				<img class="noti" src="icons/notifications.svg" alt="">
-				<img class="dp" src="icons/my-dp.jpg" alt="">
-			</div>
-			
-		</div>
-		<div class="container">
-			<div class="video-preview">
-				<div class="thumnail-row">
-					<img
-						class="thumbnail-img"
-						src="thumbnails/thumbnail-1.webp"
-						alt="thumbnail-1"
-					/>
+				<div class="upload-container">
+					<img class="upload-icon" src="icons/upload.svg" alt="" />
+					<div class="tooltip">Create</div>
 				</div>
+				<div class="apps-container">
+					<img
+						class="apps-icon"
+						src="icons/youtube-apps.svg"
+						alt=""
+					/>
+					<div class="tooltip">YouTube apps</div>
+				</div>
+
+				<div class="notification-container">
+					<img
+						class="notification-icon"
+						src="icons/notifications.svg"
+						alt=""
+					/>
+					<div class="tooltip">Notifications</div>
+					<div class="notification-count">3</div>
+				</div>
+
+				<img class="user-image" src="icons/my-dp.jpg" alt="" />
+			</div>
+		</header>
+		<nav class="sidebar">
+			<div class="sidebar-link">
+				<img src="icons/home.svg" alt="" />
+				<div>Home</div>
+			</div>
+			<div class="sidebar-link">
+				<img src="icons/explore.svg" alt="" />
+				<div>Explore</div>
+			</div>
+			<div class="sidebar-link">
+				<img src="icons/subscriptions.svg" alt="" />
+				<div>Subscriptions</div>
+			</div>
+			<div class="sidebar-link">
+				<img src="icons/originals.svg" alt="" />
+				<div>Originals</div>
+			</div>
+			<div class="sidebar-link">
+				<img src="icons/youtube-music.svg" alt="" />
+				<div>YouTube Music</div>
+			</div>
+			<div class="sidebar-link">
+				<img src="icons/library.svg" alt="" />
+				<div>Library</div>
+			</div>
+			<div class="sidebar-link">
+				<svg
+					height="24"
+					viewBox="0 0 24 24"
+					width="24"
+					focusable="false"
+					class="download-icon"
+					style="
+						pointer-events: none;
+						display: block;
+						width: 26px;
+						height: 50%;
+					"
+				>
+					<path
+						d="M17 18v1H6v-1h11zm-.5-6.6-.7-.7-3.8 3.7V4h-1v10.4l-3.8-3.8-.7.7 5 5 5-4.9z"
+					></path>
+				</svg>
+
+				<div>Downloads</div>
+			</div>
+		</nav>
+		<main class="container">
+			<section class="video-preview">
+				<a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-1.webp"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">14:20</div>
+					</div>
+				</a>
 				<div class="bottom-row">
 					<div class="bottom-left">
-						<img
-							class="profile-pic"
-							src="profile_pics/channel-1.jpeg"
-							alt="profile-picture"
-						/>
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/c/mkbhd">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-1.jpeg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-1.jpeg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">Marques Brownlee</p>
+									<p class="sub-count">15M subscribers</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="bottom-right">
-						<p class="title">
-							Talking Tech and AI with Google CEO Sundar Pichai!
-						</p>
-						<p class="author">Marques Brownlee</p>
+						<a
+							class="visited-title-link"
+							href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+						>
+							<p class="title">
+								Talking Tech and AI with Google CEO Sundar
+								Pichai!
+							</p>
+						</a>
+
+						<a href="https://www.youtube.com/c/mkbhd">
+							<p class="author">Marques Brownlee</p>
+						</a>
 						<p class="views">3.4M views · 6 months ago</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="video-preview">
-				<div class="thumnail-row">
-					<img
-						class="thumbnail-img"
-						src="thumbnails/thumbnail-2.webp"
-						alt="thumbnail-1"
-					/>
-				</div>
+			<section class="video-preview">
+				<a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-2.webp"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">8:22</div>
+					</div>
+				</a>
 				<div class="bottom-row">
 					<div class="bottom-left">
-						<img
-							class="profile-pic"
-							src="profile_pics/channel-2.jpeg"
-							alt="profile-picture"
-						/>
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/c/markiplier">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-2.jpeg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-2.jpeg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">Markiplier</p>
+									<p class="sub-count">35.6M subscribers</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="bottom-right">
-						<p class="title">Try Not To Laugh Challenge #9</p>
-						<p class="author">Markiplier</p>
+						<a
+							href="https://www.youtube.com/watch?v=mP0RAo9SKZk"
+							class="visited-title-link"
+						>
+							<p class="title">Try Not To Laugh Challenge #9</p>
+						</a>
+						<a href="https://www.youtube.com/c/markiplier">
+							<p class="author">Markiplier</p>
+						</a>
 						<p class="views">19M views · 4 years ago</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="video-preview">
-				<div class="thumnail-row">
-					<img
-						class="thumbnail-img"
-						src="thumbnails/thumbnail-3.webp"
-						alt="thumbnail-1"
-					/>
-				</div>
+			<section class="video-preview">
+				<a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-3.webp"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">9:13</div>
+					</div>
+				</a>
 				<div class="bottom-row">
 					<div class="bottom-left">
-						<img
-							class="profile-pic"
-							src="profile_pics/channel-3.jpeg"
-							alt="profile-picture"
-						/>
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/user/SSSniperWolf">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-3.jpeg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-3.jpeg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">SSSniperWolf</p>
+									<p class="sub-count">34.2M subscribers</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="bottom-right">
-						<p class="title">
-							Crazy Tik Toks Taken Moments Before DISASTER
-						</p>
-						<p class="author">SSSniperWolf</p>
+						<a
+							href="https://www.youtube.com/watch?v=FgjPQQeTh1w"
+							class="visited-title-link"
+						>
+							<p class="title">
+								Crazy Tik Toks Taken Moments Before DISASTER
+							</p>
+						</a>
+
+						<a href="https://www.youtube.com/user/SSSniperWolf">
+							<p class="author">SSSniperWolf</p>
+						</a>
 						<p class="views">12M views · 1 year ago</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="video-preview">
-				<div class="thumnail-row">
-					<img
-						class="thumbnail-img"
-						src="thumbnails/thumbnail-4.webp"
-						alt="thumbnail-1"
-					/>
-				</div>
+			<section class="video-preview">
+				<a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-4.webp"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">22:09</div>
+					</div>
+				</a>
 				<div class="bottom-row">
 					<div class="bottom-left">
-						<img
-							class="profile-pic"
-							src="profile_pics/channel-4.jpeg"
-							alt="profile-picture"
-						/>
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/c/veritasium">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-4.jpeg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-4.jpeg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">Veritasium</p>
+									<p class="sub-count">14.3M subscribers</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="bottom-right">
-						<p class="title">
-							The Simplest Math Problem No One Can Solve - Collatz
-							Conjecture
-						</p>
-						<p class="author">Veritasium</p>
+						<a
+							href="https://www.youtube.com/watch?v=094y1Z2wpJg"
+							class="visited-title-link"
+						>
+							<p class="title">
+								The Simplest Math Problem No One Can Solve -
+								Collatz Conjecture
+							</p>
+						</a>
+
+						<a href="https://www.youtube.com/c/veritasium">
+							<p class="author">Veritasium</p>
+						</a>
 						<p class="views">18M views · 4 months ago</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="video-preview">
-				<div class="thumnail-row">
-					<img
-						class="thumbnail-img"
-						src="thumbnails/thumbnail-5.webp"
-						alt="thumbnail-1"
-					/>
-				</div>
+			<section class="video-preview">
+				<a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-5.webp"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">11:17</div>
+					</div>
+				</a>
 				<div class="bottom-row">
 					<div class="bottom-left">
-						<img
-							class="profile-pic"
-							src="profile_pics/channel-5.jpeg"
-							alt="profile-picture"
-						/>
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/c/CSDojo">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-5.jpeg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-5.jpeg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">CS Dojo</p>
+									<p class="sub-count">1.92M subscribers</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="bottom-right">
-						<p class="title">
-							Kadane's Algorithm to Maximum Sum Subarray Problem
-						</p>
-						<p class="author">CS Dojo</p>
+						<a
+							href="https://www.youtube.com/watch?v=86CQq3pKSUw"
+							class="visited-title-link"
+						>
+							<p class="title">
+								Kadane's Algorithm to Maximum Sum Subarray
+								Problem
+							</p>
+						</a>
+						<a href="https://www.youtube.com/c/CSDojo">
+							<p class="author">CS Dojo</p>
+						</a>
 						<p class="views">519K views · 5 years ago</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="video-preview">
-				<div class="thumnail-row">
-					<img
-						class="thumbnail-img"
-						src="thumbnails/thumbnail-6.webp"
-						alt="thumbnail-1"
-					/>
-				</div>
+			<section class="video-preview">
+				<a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-6.webp"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">19:59</div>
+					</div>
+				</a>
 				<div class="bottom-row">
 					<div class="bottom-left">
-						<img
-							class="profile-pic"
-							src="profile_pics/channel-6.jpeg"
-							alt="profile-picture"
-						/>
+						<div class="profile-pic-container">
+							<a
+								href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA"
+							>
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-6.jpeg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-6.jpeg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">MrBeast</p>
+									<p class="sub-count">201M subscribers</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="bottom-right">
-						<p class="title">
-							Anything You Can Fit In The Circle I’ll Pay For
-						</p>
-						<p class="author">MrBeast</p>
+						<a
+							href="https://www.youtube.com/watch?v=yXWw0_UfSFg"
+							class="visited-title-link"
+						>
+							<p class="title">
+								Anything You Can Fit In The Circle I’ll Pay For
+							</p>
+						</a>
+						<a
+							href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA"
+						>
+							<p class="author">MrBeast</p>
+						</a>
 						<p class="views">141M views · 1 year ago</p>
 					</div>
 				</div>
-			</div>
-		</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=BSch3h-xWwA&pp=ygUFc3VkaHk%3D"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-7.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">13:37</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@Sudhy">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-7.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-7.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">Sudhy</p>
+									<p class="sub-count">120K subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=BSch3h-xWwA&pp=ygUFc3VkaHk%3D"
+							class="visited-title-link"
+						>
+							<p class="title">
+								SB31: I KILLED WITHER IN MY SKYBLOCK WORLD!
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@Sudhy">
+							<p class="author">
+								Sudhy
+								<img
+									class="youtube-verified"
+									src="icons/verified-youtube.png"
+									alt=""
+								/>
+							</p>
+						</a>
+						<p class="views">34K views · 7 days ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=YXXlSG-du7c&pp=ygUMZHVkZSBwZXJmZWN0"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-8.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">19:59</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@dudeperfect">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-8.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-8.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">Dude Perfect</p>
+									<p class="sub-count">59.8M subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=YXXlSG-du7c&pp=ygUMZHVkZSBwZXJmZWN0"
+							class="visited-title-link"
+						>
+							<p class="title">Dude Perfect Goes to SPACE</p>
+						</a>
+						<a href="https://www.youtube.com/@dudeperfect">
+							<p class="author">
+								Dude Perfect
+								<img
+									class="youtube-verified"
+									src="icons/verified-youtube.png"
+									alt=""
+								/>
+							</p>
+						</a>
+						<p class="views">34M views · 11 months ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=4nCy6FQkye8&pp=ygUsYSBiaXQgYmVhc3QgcmVzaWRlbnQgZXZpbCA4IHNoYWRvd3Mgb2Ygcm9zZSA%3D"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-9.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">35:49</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@abitbeast">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-9.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-9.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">A Bit-Beast</p>
+									<p class="sub-count">284K subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=4nCy6FQkye8&pp=ygUsYSBiaXQgYmVhc3QgcmVzaWRlbnQgZXZpbCA4IHNoYWRvd3Mgb2Ygcm9zZSA%3D"
+							class="visited-title-link"
+						>
+							<p class="title">
+								RESIDENT EVIL 8 VILLAGE - PART 10 HEISENBERG -
+								MALAYALAM WALKTHROUGH | A Bit-Beast
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@abitbeast">
+							<p class="author">
+								A Bit-Beast
+								<img
+									src="icons/verified-youtube.png"
+									class="youtube-verified"
+									alt=""
+								/>
+							</p>
+						</a>
+						<p class="views">29K views · 1 year ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=6IgJU5swBnU&pp=ygWCAeC0sOC0o-C1jeC0n-C1gSDgtLXgtbzgtLfgtIIg4LSu4LWB4LSo4LWN4LSo4LWHIOC0leC0vuC0o-C0vuC0pOC1huC0quC1i-C0ryDgtIbgtLPgtYYg4LSk4LWH4LSf4LS_IOC0quC1i-C0leC1geC0ruC1jeC0quC1i-C1vi4uLi4%3D"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-13.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">32:25</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a
+								href="https://www.youtube.com/@orukadhasollattumasir7769"
+							>
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-13.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-13.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">
+										Oru Kadha Sollattuma Sir
+									</p>
+									<p class="sub-count">838K subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=6IgJU5swBnU&pp=ygWCAeC0sOC0o-C1jeC0n-C1gSDgtLXgtbzgtLfgtIIg4LSu4LWB4LSo4LWN4LSo4LWHIOC0leC0vuC0o-C0vuC0pOC1huC0quC1i-C0ryDgtIbgtLPgtYYg4LSk4LWH4LSf4LS_IOC0quC1i-C0leC1geC0ruC1jeC0quC1i-C1vi4uLi4%3D"
+							class="visited-title-link"
+						>
+							<p class="title">
+								രണ്ടു വർഷം മുന്നേ കാണാതെപോയ ആളെ തേടി
+								പോകുമ്പോൾ......
+							</p>
+						</a>
+						<a
+							href="https://www.youtube.com/@orukadhasollattumasir7769"
+						>
+							<p class="author">
+								Oru Kadha Sollattuma Sir
+								<img
+									src="icons/verified-youtube.png"
+									class="youtube-verified"
+									alt=""
+								/>
+							</p>
+						</a>
+						<p class="views">256K views · 2 months ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=G3e-cpL7ofc&pp=ygUQaHRtbCBmdWxsIGNvdXJzZQ%3D%3D"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-11.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">6:31:24</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@SuperSimpleDev">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-11.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-11.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">SuperSimpleDev</p>
+									<p class="sub-count">305K subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=G3e-cpL7ofc&pp=ygUQaHRtbCBmdWxsIGNvdXJzZQ%3D%3D"
+							class="visited-title-link"
+						>
+							<p class="title">
+								HTML & CSS Full Course - Beginner to Pro
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@SuperSimpleDev">
+							<p class="author">SuperSimpleDev</p>
+						</a>
+						<p class="views">6.8M views · 1 year ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=N_KpjLhJa1k&pp=ygUMSElHSCBIRUVMIE5F"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-10.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">19:59</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@tseries">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-10.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-10.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">T-Series</p>
+									<p class="sub-count">251M subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=N_KpjLhJa1k&pp=ygUMSElHSCBIRUVMIE5F"
+							class="visited-title-link"
+						>
+							<p class="title">
+								HIGH HEELS TE NACHCHE Video Song | KI & KA |
+								Meet Bros ft. Jaz Dhami | Yo Yo Honey Singh |
+								T-Series
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@tseries">
+							<p class="author">
+								T-Series
+								<img
+									src="icons/verified-youtube.png"
+									class="youtube-verified"
+									alt=""
+								/>
+							</p>
+						</a>
+						<p class="views">210M views · 7 year ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=D1kTu2hacaI&pp=ygUYdG9tYiByYWlkZXIgZ2FtZSB0cmFpbGVy"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-19.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">2:54</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@gamespot">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-19.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-19.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">GameSpot</p>
+									<p class="sub-count">5.35M subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=D1kTu2hacaI&pp=ygUYdG9tYiByYWlkZXIgZ2FtZSB0cmFpbGVy"
+							class="visited-title-link"
+						>
+							<p class="title">
+								Shadow Of The Tomb Raider - Official Trailer
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@gamespot">
+							<p class="author">GameSpot</p>
+						</a>
+						<p class="views">
+							1.2M views · 5 year ago
+							<img
+								src="icons/verified-youtube.png"
+								class="youtube-verified"
+								alt=""
+							/>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=Xx6SKzOUqhQ&pp=ygUOc3RheSBrcyBjaGl0cmE%3D"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-15.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">2:20</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@sixeightmusic">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-15.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-15.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">Six Eight</p>
+									<p class="sub-count">32.2K subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=Xx6SKzOUqhQ&pp=ygUOc3RheSBrcyBjaGl0cmE%3D"
+							class="visited-title-link"
+						>
+							<p class="title">
+								STAY Ft K.S. Chithra | Stay X Pon Kasavu Six
+								Eight Edit | The Kid LAROI & Justin Bieber
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@sixeightmusic">
+							<p class="author">Six Eight</p>
+						</a>
+						<p class="views">3.3M views · 3 months ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a href="https://www.youtube.com/watch?v=7VsO8YYQkE8">
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-12.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">28:28</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a
+								href="https://www.youtube.com/@baijunnairofficial"
+							>
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-12.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-12.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">Baiju N Nair</p>
+									<p class="sub-count">1M subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=7VsO8YYQkE8"
+							class="visited-title-link"
+						>
+							<p class="title">
+								മലയാളസിനിമയിൽ വാഹനപ്രാന്തന്മാരുണ്ട്,എന്നാൽ അവരെ
+								തോൽപ്പിക്കുന്ന,മമ്ത ....
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@baijunnairofficial">
+							<p class="author">
+								Baiju N Nair
+								<img
+									src="icons/verified-youtube.png"
+									class="youtube-verified"
+									alt=""
+								/>
+							</p>
+						</a>
+						<p class="views">43K views · 5 hours ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=lM8h5Mm6ODo&pp=ygUFa2FhdmE%3D"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-18.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">2:54</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@suntv">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-18.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-18.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">Sun TV</p>
+									<p class="sub-count">24.9M subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=lM8h5Mm6ODo&pp=ygUFa2FhdmE%3D"
+							class="visited-title-link"
+						>
+							<p class="title">
+								JAILER - Kaavaalaa Video Song | Superstar
+								Rajinikanth | Sun Pictures | Anirudh | Nelson |
+								Tamannaah
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@suntv">
+							<p class="author">
+								Sun TV
+								<img
+									src="icons/verified-youtube.png"
+									class="youtube-verified"
+									alt=""
+								/>
+							</p>
+						</a>
+						<p class="views">82M views · 1 month ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=wGqxtXdPzxE&pp=ygUHbTQgdGVjaA%3D%3D"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-14.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">19:12</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@M4Techofficial">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-14.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-14.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">M4 Tech</p>
+									<p class="sub-count">12.1M subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=wGqxtXdPzxE&pp=ygUHbTQgdGVjaA%3D%3D"
+							class="visited-title-link"
+						>
+							<p class="title">
+								Giant Burger | 50KG Burger | ഇന്ത്യയിലെ ഏറ്റവും
+								വലുത് | M4 Tech |
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@M4Techofficial">
+							<p class="author">
+								M4 Tech
+								<img
+									src="icons/verified-youtube.png"
+									class="youtube-verified"
+									alt=""
+								/>
+							</p>
+						</a>
+						<p class="views">3.6M views · 4 months ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=y9CCRsY4s1A&pp=ygUZZXRzMiBrZXJhbGEgbWFwIGtvemhpa29kZQ%3D%3D"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-20.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">22:58</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@keralabusdesign">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-20.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-20.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">
+										Kerala Bus Design
+									</p>
+									<p class="sub-count">153K subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=y9CCRsY4s1A&pp=ygUZZXRzMiBrZXJhbGEgbWFwIGtvemhpa29kZQ%3D%3D"
+							class="visited-title-link"
+						>
+							<p class="title">
+								കൊയ്‌ക്കോട് കണ്ണൂർ മാപ്പ് Calicut Kannur Map
+								Progress ETS2
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@keralabusdesign">
+							<p class="author">
+								Kerala Bus Design
+								<img
+									src="icons/verified-youtube.png"
+									class="youtube-verified"
+									alt=""
+								/>
+							</p>
+						</a>
+						<p class="views">439K views · 3 year ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=hU2SJwQhGrU&pp=ygUGcG9vcmFt"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-17.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">3:19</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a
+								href="https://www.youtube.com/channel/UCV8DmOLddaYx4Yt9MMbeYbw"
+							>
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-17.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-17.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">RHYTHOM-Topic</p>
+									<p class="sub-count">806 subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=hU2SJwQhGrU&pp=ygUGcG9vcmFt"
+							class="visited-title-link"
+						>
+							<p class="title">Pooram (From "Think Specials")</p>
+						</a>
+						<a
+							href="https://www.youtube.com/channel/UCV8DmOLddaYx4Yt9MMbeYbw"
+						>
+							<p class="author">RHYTHOM-Topic</p>
+						</a>
+						<p class="views">531k views · 1 month ago</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-preview">
+				<a
+					href="https://www.youtube.com/watch?v=6UncKXB_Dwg&t=197s&pp=ygUMc2h1bGtlcmNyYWZ0"
+				>
+					<div class="thumbnail-row">
+						<img
+							class="thumbnail-img"
+							src="thumbnails/thumbnail-16.jpg"
+							alt="thumbnail-1"
+						/>
+						<div class="video-time">6:07</div>
+					</div>
+				</a>
+				<div class="bottom-row">
+					<div class="bottom-left">
+						<div class="profile-pic-container">
+							<a href="https://www.youtube.com/@Shulkercraft">
+								<img
+									class="profile-pic"
+									src="profile_pics/channel-16.jpg"
+									alt="profile-picture"
+								/>
+							</a>
+							<div class="channel-tooltip">
+								<div class="tooltip-image">
+									<img
+										src="profile_pics/channel-16.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="tootip-text">
+									<p class="channel-name">Shulkercraft</p>
+									<p class="sub-count">2.03M subscribers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right">
+						<a
+							href="https://www.youtube.com/watch?v=6UncKXB_Dwg&t=197s&pp=ygUMc2h1bGtlcmNyYWZ0"
+							class="visited-title-link"
+						>
+							<p class="title">
+								15 Best Armor Trim Combinations In Minecraft
+							</p>
+						</a>
+						<a href="https://www.youtube.com/@Shulkercraft">
+							<p class="author">
+								Shulkercraft
+								<img
+									src="icons/verified-youtube.png"
+									class="youtube-verified"
+									alt=""
+								/>
+							</p>
+						</a>
+						<p class="views">55K views · 2 days ago</p>
+					</div>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

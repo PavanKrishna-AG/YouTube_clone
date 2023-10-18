@@ -1,0 +1,160 @@
+.container {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	column-gap: 25px;
+	row-gap: 40px;
+}
+@media (max-width: 850px) {
+	.container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1200.1px) {
+	.container {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+@media (min-width: 851px) and (max-width: 1199px) {
+	.container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@media (max-width: 999px) {
+	.title {
+		font-size: 14px;
+		line-height: 21px;
+	}
+}
+
+@media (max-width: 999px) {
+	.author,
+	.views {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.title {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.author,
+	.views {
+		font-size: 14px;
+	}
+}
+
+.video-preview {
+	width: 305px;
+}
+.thumbnail-row {
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 7px;
+}
+.thumbnail-img {
+	width: 100%;
+}
+
+.video-time {
+	position: absolute;
+	bottom: 13px;
+	right: 6px;
+	font-weight: 500;
+	background-color: black;
+	color: white;
+
+	font-size: 13px;
+	padding: 4px 4px;
+	border-radius: 2px;
+}
+.bottom-row {
+	display: grid;
+	grid-template-columns: 40px 1fr;
+}
+.profile-pic {
+	width: 89%;
+	border-radius: 100px;
+}
+.profile-pic-container {
+	position: relative;
+}
+.channel-tooltip {
+	width: 260px;
+	height: 85px;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	border-radius: 8px;
+	align-items: center;
+	border: 1px solid rgb(207, 207, 207);
+	box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	z-index: 300;
+	transition: opacity 0.15s;
+	bottom: -100px;
+}
+.profile-pic-container:hover .channel-tooltip {
+	opacity: 1;
+}
+.tooltip-image {
+	display: flex;
+	width: 75px;
+	justify-content: center;
+	align-items: center;
+}
+.tooltip-image img {
+	border-radius: 100px;
+	width: 55px;
+	padding: 10px;
+}
+.tooltip-text {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.channel-name {
+	margin-bottom: 3px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.sub-count {
+	color: #606060;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.bottom-right {
+	padding-left: 8px;
+}
+.visited-title-link:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.title {
+	font-weight: 500;
+
+	color: black;
+}
+.author {
+	color: #606060;
+	margin-top: 10px;
+}
+.youtube-verified {
+	width: 10px;
+	margin-top: 2px;
+	padding-top: 3px;
+}
+.views {
+	margin-top: 3px;
+
+	color: #606060;
+}
