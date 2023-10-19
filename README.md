@@ -15,7 +15,7 @@ I learned HTML and CSS from the YouTube channel called [SuperSimpleDev](https://
 
 ### Tutorial Video Link
 
-You can watch the tutorial video that guided me through this project [here](https://youtu.be/G3e-cpL7ofc?si=jO5rXpV093VQx_Tz).
+You can watch the tutorial video that guided me through this project [here](https://youtu.be/G3e-cpL7ofc?si=PDzJzgqD_qKkw0O1).
 
 
 ## Acknowledgements
@@ -30,7 +30,7 @@ I would like to thank the owner of the [SuperSimpleDev](https://www.youtube.com/
  
   ### YouTube Clone Preview
 
-Feel free to reach out if you have any questions or feedback about this project!
+
 
 https://github.com/CHEKUTHAN-ZER/YouTube_clone/assets/138313118/812b2c45-3f0b-4ae1-a2d5-5824318fdcdb
 
