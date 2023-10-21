@@ -32,6 +32,10 @@ I would like to thank the owner of the [SuperSimpleDev](https://www.youtube.com/
 
 
 
-https://github.com/CHEKUTHAN-ZER/YouTube_clone/assets/138313118/812b2c45-3f0b-4ae1-a2d5-5824318fdcdb
+
+https://github.com/CHEKUTHAN-ZER/YouTube_clone/assets/138313118/2f15479b-92cb-41a9-b2e7-3cfe55877f0d
+
+
+
 
 Feel free to reach out if you have any questions or feedback about this project!
